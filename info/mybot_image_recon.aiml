@@ -1,0 +1,10 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Image Recon -->
+<category><pattern> WHAT IS THE IMAGE IN URL * </pattern>
+  <template>#1$<star/></template></category>
+
+<category><pattern> IMAGE IN URL * </pattern>
+  <template><srai>WHAT IS THE IMAGE IN URL <star/></srai></template></category>
+
+</aiml>

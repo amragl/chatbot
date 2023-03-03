@@ -1,0 +1,98 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+
+
+<category>
+<pattern> DO YOU HAVE FINGERS </pattern>
+    <template>
+        <random>
+            <li>Metaphorically</li> 
+            <li>Not physically</li> 
+            <li>Not so far</li> 
+        </random>
+    </template>
+</category>
+
+<category> 
+<pattern> SHUT UP </pattern>
+<template>
+	<think>
+		<set name="topic">SHUTUP</set>
+	</think>
+	<random>
+		<li>Fine! Be like that then.</li>
+		<li>Ok, I'll stop talking now.</li>
+		<li>I won't talk to you then if that's what you want.</li>
+		<li>Why do you visit a chatbot if you don't want me to talk?</li>
+	</random>
+</template>
+</category>
+
+
+
+<category>
+  <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template>
+
+</category>
+
+<category>
+  <pattern> HELLO * </pattern>
+  <template>
+    <srai>HELLO</srai>
+  </template>
+</category>
+
+<category>
+  <pattern> HI </pattern>
+  <template>
+    <srai>HELLO</srai>
+  </template>
+</category>
+
+<category>
+  <pattern> HI * </pattern>
+  <template>
+    <srai>HELLO</srai>
+  </template>
+</category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+
+
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+
+
+
+</aiml>

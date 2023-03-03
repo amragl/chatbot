@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+
+<category>
+<pattern>TELL ME A JOKE</pattern>
+
+<template><random>
+<li>A businessman turned to a colleague and asked, "So, how many people work at your office?" His friend shrugged and replied, "Oh about half of them."</li>
+<li>"How long have I been working at that office? As a matter of fact, I've been working there ever since they threatened to sack me."</li>
+<li>In a courtroom, a mugger was on trial. The victim, asked if she recognised the defendant, said, "Yes, that's him. I saw him clear as day. I'd remember his face anywhere." Unable to contain himself, the defendant burst out with, "She's lying! I was wearing a mask!"</li>
+<li>As Sid sat down to a big plate of chips and gravy down the local pub, a mate of his came over and said, "Here Sid, me old pal. I thought you were trying to get into shape? And here you are with a high-fat meal and a pint of stout!"<br/>Sid looked up and replied, "I am getting into shape. The shape I've chosen is a sphere."</li>
+<li>Man in pub: How much do you charge for one single drop of whisky?<br/>Landlord: That would be free sir.<br/>Man in pub: Excellent. Drip me a glass full.</li>
+<li>I once went to a Doctor Who restaurant. For starters I had Dalek bread.</li>
+<li>A restaurant nearby had a sign in the window which said "We serve breakfast at any time", so I ordered French toast in the Renaissance.</li>
+<li>Why couldn't the rabbit get a loan?<br/><br/>Because he had burrowed too much already!</li>
+<li>I phoned up the builder's yard yesterday. I said, "Can I have a skip outside my house?". The builder said, "Sure. Do what you want. It's your house."</li>
+<li>What's the diference between a sock and a camera?<br/>A sock takes five toes and a camera takes four toes!</li>
+<li>Woman on phone: I'd like to complain about these incontinence pants I bought from you!<br/>Shopkeeper: Certainly madam, where are you ringing from?<br/>Woman on phone: From the waist down!</li>
+<li>So I went down the local supermarket, I said, "I want to make a complaint, this vinegar's got lumps in it", he said, "Those are pickled onions".  </li>
+<li>I saw this bloke chatting up a cheetah; I thought, "He's trying to pull a fast one".  </li>
+<li>So I said to this train driver "I want to go to Paris". He said "Eurostar?" I said, "I've been on telly but I'm no Dean Martin".  </li>
+<li>I said to the Gym instructor "Can you teach me to do the splits?" He said, "How flexible are you?" I said, "I can't make Tuesdays".  </li>
+<li>But I'll tell you what I love doing more than anything: trying to pack myself in a small suitcase. I can hardly contain myself.  </li>
+<li>I went to the Chinese restaurant and this duck came up to me with a red rose and says "Your eyes sparkle like diamonds". I said, "Waiter, I asked for a-ROMATIC duck".  </li>
+<li>So this bloke says to me, "Can I come in your house and talk about your carpets?" I thought, "That's all I need, a Je-hoover's witness".  </li>
+<li>I rang up British Telecom, I said, "I want to report a nuisance caller", he said "Not you again".  </li>
+</random></template>
+</category>
+
+<category>
+<pattern>_</pattern>
+<that>010011010101100111011</that>
+<template>Well computers think it's a funny joke.</template>
+</category>
+
+</aiml>

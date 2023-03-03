@@ -1,0 +1,113 @@
+First-Order Logic in Artificial intelligence
+https://www.javatpoint.com/first-order-logic-in-artificial-intelligence
+https://en.wikipedia.org/wiki/List_of_logic_symbols
+https://www.cs.cornell.edu/courses/cs472/2007fa/lectures/17-kb-systems_fol.pdf
+https://www.javatpoint.com/ai-knowledge-engineering-in-first-order-logic
+https://www.cs.ubc.ca/~hkhosrav/ai/slides/chapter8.pdf (FOL)
+https://github.com/nltk/nltk/blob/develop/nltk/inference/prover9.py
+
+Image Resources
+https://1000logos.net/windows-logo/
+https://1000logos.net/linux-logo/
+MacOS -> https://logos.fandom.com/wiki/MacOS/Icons
+
+KB Sources
+https://www.ibm.com/uk-en/topics/infrastructure
+
+Task statement
+"IT Infrastructure is comprised by hardware and software. Hardware main categories are server,
+switch and router. Software Main categories are OS,  CMS and CRM. Hardware uses software and Software manage hardware "
+
+Knowledge Engineering in First-order logic
+1. Identify the task
+Classify main components groups within IT infrastructure
+Classify main components within each IT infrastructure group
+
+2. Assemble the relevant knowledge:
+
+IT infrastructure has Hardware and Software
+
+Server is Hardware
+Hub is Hardware
+Router is Hardware
+Switch is Hardware
+
+
+OS is Software
+CMS is Software
+CRM is Software
+
+
+Hardware uses Software
+Software manage Hardware
+
+
+3. Decide on vocabulary:
+select functions, predicate, and constants
+
+Constant	1, 2, A, John, Mumbai, cat,....
+Variables	x, y, z, a, b,....
+Predicates	Brother, Father, >,....
+Function	sqrt, LeftLegOf, ....
+Connectives	∧, ∨, ¬, ⇒, ⇔
+Equality	==
+Quantifier	∀, ∃
+
+Constants: Server, Hub, Router, Switch, OS, CMS,CRM, ERP
+Variables: x, y, z
+Predicates:
+    IT Infrastructure(Hardware)
+    IT Infrastructure(Software)
+
+    Hardware (x)
+    Software (y)
+Functions:
+
+    IT Infrastructure
+        contains(x, Hardware)
+        contains(y, Software)
+    Hardware
+        uses (x, y)
+        connects (x,x)
+    Software
+        manages (y, x)
+        connects(y,y)
+
+Encode general knowledge about the domain:
+
+All IT Infrastructure is made of software and hardware.
+
+# All Hardware and Software is IT_Infrastructure
+"IT_Infrastructure (Hardware, SoftWare)"
+
+#Hardware Servers, Hub, Router, Switch, Facility  are Hardware, uses Software, connects_via Network
+"~Hardware(Software)"
+"server(x) -> Hardware(x)"
+"hub(x) -> Hardware(x)"
+"router(x) -> Hardware(x)"
+"switch(x) -> Hardware(x)"
+
+"is (x, server)"
+"is (x, Hub)"
+"is (x, router)"
+"is (x, switch)"
+
+"uses(x, y)"
+"Connect (x,x)"
+
+Software OS, CMS, CRM, ERP are Software, manages Hardware, connects_via Network
+"OS (y) -> Software(y)"
+"CMS(y) -> Software(y)"
+"CRM(y) -> Software(y)"
+"ERP(y) -> Software(y)"
+
+"manages(y, x)"
+"connect (y,y)"
+
+5. Encode a description of the problem instance:
+
+For IT Infrastructure = Hardware, Software
+For Hardware = Server, Hub, Router, Switch
+For Software = OS, CMS, CRM, ERP
+
+6. Pose queries to the inference procedure and get answers:

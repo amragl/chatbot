@@ -1,0 +1,31 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+
+  <!--Take parameter-->
+  <category><pattern> I KNOW * IS * </pattern>
+    <template>#3$<star index="1"/> is <star index="2"/></template></category>
+
+  <category><pattern> I KNOW * MANAGE * </pattern>
+    <template>#3$<star index="1"/> manage <star index="2"/></template></category>
+
+  <category><pattern> I KNOW * USE * </pattern>
+    <template>#3$<star index="1"/> use <star index="2"/></template></category>
+
+  <category><pattern> Add to KB server * </pattern>
+    <template>#3$<star index="1"/>,server</template></category>
+
+  <category><pattern> Add to KB OS * </pattern>
+    <template>#3$<star index="1"/>,OS</template></category>
+
+  <category><pattern> Add to KB * MANAGE * </pattern>
+    <template>#3$<star index="1"/> manage <star index="2"/></template></category>
+
+   <category><pattern> Add to KB * USE * </pattern>
+    <template>#3$<star index="1"/> use <star index="2"/></template></category>
+
+  <category><pattern> SHOW ME YOUR KB</pattern>
+    <template>#2$OS</template></category>
+
+
+
+</aiml>
